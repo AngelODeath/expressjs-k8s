@@ -5,7 +5,7 @@ Example to show how to build a microservice with Node.js and Express.js with ins
 ## Clone the repository
 
 ```
-git clone https://github.com/alexellis/expressjs-docker \
+git clone https://github.com/AngelODeath/expressjs-docker \
 && cd expressjs-docker
 ```
 
@@ -65,7 +65,7 @@ Access using the gateway's URL found via `faas-cli describe service`
 
 Edit/rebuild:
 
-Edit `image: alexellis2` and replace with your own Docker Hub username in `stack.yml`, then run:
+Edit `image: AngelODeath2` and replace with your own Docker Hub username in `stack.yml`, then run:
 
 ```sh
 faas-cli up
@@ -112,7 +112,7 @@ What is different?
 ## Run it with docker
 
 ```sh
-docker run --name expressjs -p 8081:8080 -ti alexellis2/service:0.3.2
+docker run --name expressjs -p 8081:8080 -ti AngelODeath2/service:0.3.2
 ```
 
 Access via http://localhost:8081
@@ -142,7 +142,7 @@ Clean up by hitting Control + C.
 First install [Helm 3](https://helm.sh).
 
 ```
-helm repo add expressjs-k8s https://alexellis.github.io/expressjs-k8s/
+helm repo add expressjs-k8s https://github.com/AngelODeath/expressjs-k8s/
 
 helm repo update
 
